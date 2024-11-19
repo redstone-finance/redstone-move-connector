@@ -1,0 +1,8 @@
+#!/bin/bash
+
+MODULE_ADDRESS="0x112e0d5c408de9321877722c60ddfd81649cd1fcf7944beefc132903a20bdbec"
+FEED_ID="4254430000000000000000000000000000000000000000000000000000000000"
+
+movement move view \
+    --function-id $MODULE_ADDRESS::main::get_price \
+    --args hex:$FEED_ID

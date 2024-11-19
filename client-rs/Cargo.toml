@@ -1,0 +1,18 @@
+[package]
+name = "client-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.93"
+hex = "0.4.3"
+tokio = { version = "1.41.1", features = ["full"] }
+aptos-sdk = { git = "https://github.com/aptos-labs/aptos-core", branch = "testnet" }
+dotenv = "0.15.0"
+url = "2.5.3"
+serde_json = "1.0.132"
+serde = "1.0.215"
+
+[patch.crates-io]
+merlin = { git = "https://github.com/aptos-labs/merlin" }
+x25519-dalek = { git = "https://github.com/aptos-labs/x25519-dalek", branch = "zeroize_v1" }
