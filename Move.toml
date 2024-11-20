@@ -1,0 +1,16 @@
+[package]
+name = "redstone_move_connector"
+version = "1.0.0"
+authors = []
+
+[addresses]
+redstone_move_connector = "0x112e0d5c408de9321877722c60ddfd81649cd1fcf7944beefc132903a20bdbec"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "testnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
